@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:elevation="1dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/lin_styles_3"
+    android:layout_height="110dp">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/prodouct_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/test"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+
+            android:id="@+id/sku_name"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/BLAK"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男士暴龙眼镜DGFHTDF"
+            />
+        <TextView
+            android:id="@+id/sku_Price"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥500.00"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="bottom|right"
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/add_cart"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="19dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/jiaru"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

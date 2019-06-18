@@ -107,6 +107,18 @@
 
             </RelativeLayout>
 
+            <Button
+                android:layout_marginTop="31dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="下一步"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:background="@drawable/button_backgroud_bt1"
+                />
+
 
 
         </LinearLayout>

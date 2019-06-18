@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    android:layout_height="121dp">
+    <LinearLayout
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@mipmap/tuxing"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Couponamount_tv"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥20"
+            />
+        <TextView
+            android:id="@+id/PreferentialPremises_tv"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="满160元可用"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/Termvalidity_tv"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="有效期：2019年6月5日—2019年12月31日"
+            />
+
+        <Button
+            android:id="@+id/Use_btn"
+            android:layout_marginTop="24dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="立即使用"
+            android:background="@drawable/rd_style"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

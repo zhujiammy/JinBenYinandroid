@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import com.example.jinbenyin_android.R;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class AccountManagementActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -19,6 +20,7 @@ public class AccountManagementActivity extends AppCompatActivity implements View
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.accountmanagement_xml);
+        ButterKnife.bind(this);
 
         initEvent();
     }

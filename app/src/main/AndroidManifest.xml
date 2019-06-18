@@ -138,6 +138,34 @@
 
         </activity>
 
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".View.FullOrderActivity"
+            android:theme="@style/AppTheme1">
+
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".View.MyCollectionActivity"
+            android:theme="@style/AppTheme1">
+
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".View.MyCouponActivity"
+            android:theme="@style/AppTheme1">
+
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".View.MyPromotion"
+            android:theme="@style/AppTheme1">
+
+        </activity>
+
 
     </application>
 

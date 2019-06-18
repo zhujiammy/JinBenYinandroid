@@ -125,6 +125,7 @@
 
             </RelativeLayout>
             <RelativeLayout
+                android:id="@+id/FullOrder_lin"
                 android:layout_marginTop="1dp"
                 android:background="@color/white"
                 android:orientation="horizontal"
@@ -185,6 +186,7 @@
 
             </RelativeLayout>
             <RelativeLayout
+                android:id="@+id/MyCollection_lin"
                 android:layout_marginTop="1dp"
                 android:background="@color/white"
                 android:orientation="horizontal"
@@ -213,6 +215,7 @@
 
             </RelativeLayout>
             <RelativeLayout
+                android:id="@+id/MyCoupon_lin"
                 android:layout_marginTop="1dp"
                 android:background="@color/white"
                 android:orientation="horizontal"
@@ -241,6 +244,7 @@
 
             </RelativeLayout>
             <RelativeLayout
+                android:id="@+id/MyPromotion_lin"
                 android:layout_marginTop="1dp"
                 android:background="@color/white"
                 android:orientation="horizontal"

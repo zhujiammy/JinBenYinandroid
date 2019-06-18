@@ -23,9 +23,18 @@ public class MeFragment extends Fragment implements View.OnClickListener {
     private View view;
     @BindView(R.id.Opticcenter_bt)
     RelativeLayout Opticcenter_bt;//验光中心
+    @BindView(R.id.FullOrder_lin)
+    RelativeLayout FullOrder_lin;//全部订单
+    @BindView(R.id.MyCollection_lin)
+    RelativeLayout MyCollection_lin;//我的收藏
+    @BindView(R.id.MyCoupon_lin)
+    RelativeLayout MyCoupon_lin;//我的优惠券
+    @BindView(R.id.MyPromotion_lin)
+    RelativeLayout MyPromotion_lin;//我的推广
     private Intent intent;
     @BindView(R.id.profile_image)
     CircleImageView profile_image;
+
 
     @Nullable
     @Override
@@ -40,6 +49,10 @@ public class MeFragment extends Fragment implements View.OnClickListener {
     private void initEvent(){
         Opticcenter_bt.setOnClickListener(this);
         profile_image.setOnClickListener(this);
+        FullOrder_lin.setOnClickListener(this);
+        MyCollection_lin.setOnClickListener(this);
+        MyCoupon_lin.setOnClickListener(this);
+        MyPromotion_lin.setOnClickListener(this);
     }
 
     @Override
@@ -51,6 +64,23 @@ public class MeFragment extends Fragment implements View.OnClickListener {
         }
         if(v == profile_image){
             intent = new Intent(getActivity(),PersonalInformationActivity.class);
+            startActivity(intent);
+        }
+        if(v == FullOrder_lin){
+            intent = new Intent(getActivity(),FullOrderActivity.class);
+            startActivity(intent);
+        }
+
+        if(v == MyCollection_lin){
+            intent = new Intent(getActivity(),MyCollectionActivity.class);
+            startActivity(intent);
+        }
+        if(v == MyCoupon_lin){
+            intent = new Intent(getActivity(),MyCouponActivity.class);
+            startActivity(intent);
+        }
+        if(v == MyPromotion_lin){
+            intent = new Intent(getActivity(),MyPromotion.class);
             startActivity(intent);
         }
     }
