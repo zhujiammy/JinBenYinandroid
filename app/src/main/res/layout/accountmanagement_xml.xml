@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+
+        android:id="@+id/appbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_centerInParent="true"
+
+
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账号管理"
+                />
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_marginLeft="10dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/tc"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="73dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/weixin"
+                    android:layout_width="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/weixinlogo"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="#ffffff"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/BLAK"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信"
+                    />
+
+                <Switch
+                    android:track="@drawable/switch_custom_track_selector"
+                    android:thumb="@drawable/switch_custom_thumb_selector"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="51dp"
+                    android:layout_height="23dp"
+                    android:layout_marginRight="11dp"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="1dp"
+
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="73dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/qq"
+                    android:layout_width="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/qqlogo"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="#ffffff"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/BLAK"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QQ"
+                    />
+
+                <Switch
+                    android:track="@drawable/switch_custom_track_selector"
+                    android:thumb="@drawable/switch_custom_thumb_selector"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="51dp"
+                    android:layout_height="23dp"
+                    android:layout_marginRight="11dp"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="1dp"
+                android:id="@+id/take_photo"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="73dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/weibo"
+                    android:layout_width="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/weibologo"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="#ffffff"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/BLAK"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/weibo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微博"
+                    />
+
+                <Switch
+                    android:track="@drawable/switch_custom_track_selector"
+                    android:thumb="@drawable/switch_custom_thumb_selector"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="51dp"
+                    android:layout_height="23dp"
+                    android:layout_marginRight="11dp"
+                    />
+
+            </RelativeLayout>
+            <View
+                android:background="@color/bg"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="14dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@mipmap/tishi"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/text2"
+                    android:text="绑定成功后可直接使用绑定的社交账号登录"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

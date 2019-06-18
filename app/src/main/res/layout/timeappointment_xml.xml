@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+
+        android:id="@+id/appbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预约时间"
+                />
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_marginLeft="10dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/tc"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/tv_year"
+                android:textColor="@color/BLAK"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019-"
+                />
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/tv_year"
+                android:id="@+id/tv_month"
+                android:textColor="@color/BLAK"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10-"
+                />
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/tv_month"
+                android:id="@+id/tv_day"
+                android:textColor="@color/BLAK"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                />
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/shoumonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/rl"
+            />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <com.necer.view.WeekBar
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/BLAK" />
+    <com.necer.calendar.Miui9Calendar
+
+        android:background="@color/white"
+        android:id="@+id/miui9Calendar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:calendarHeight="300dp"
+        app:selectCircleColor="@color/daycolor"
+        app:todaySolarSelectTextColor="@color/colorPrimary"
+        app:defaultCalendar="week">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <android.support.v4.widget.NestedScrollView
+                    android:background="@color/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp">
+
+                            <LinearLayout
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@mipmap/sw"
+                                    />
+
+                                <TextView
+                                    android:textColor="@color/BLAK"
+                                    android:textSize="14sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="上午"
+                                    />
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:textSize="14sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/BLAK"
+                                    android:text="08:00-10:00"
+                                    />
+                                <TextView
+                                    android:layout_marginTop="32dp"
+                                    android:textSize="14sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/BLAK"
+                                    android:text="10:00-12:00"
+                                    />
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Button
+                                    android:background="@color/buttonback"
+                                    android:textColor="@color/buttontextcolor"
+                                    android:textSize="14sp"
+                                    android:layout_width="71dp"
+                                    android:layout_height="22dp"
+                                    android:text="约满"
+                                    />
+
+                                <Button
+                                    android:layout_marginTop="32dp"
+                                    android:background="@color/buttonback"
+                                    android:textColor="@color/buttontextcolor"
+                                    android:textSize="14sp"
+                                    android:layout_width="71dp"
+                                    android:layout_height="22dp"
+                                    android:text="约满"
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:paddingTop="20dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+                            <LinearLayout
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@mipmap/xw"
+                                    />
+
+                                <TextView
+                                    android:textColor="@color/BLAK"
+                                    android:textSize="14sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="下午"
+                                    />
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:textSize="14sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/BLAK"
+                                    android:text="12:00-14:00"
+                                    />
+                                <TextView
+                                    android:layout_marginTop="32dp"
+                                    android:textSize="14sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/BLAK"
+                                    android:text="14:00-16:00"
+                                    />
+                                <TextView
+                                    android:layout_marginTop="32dp"
+                                    android:textSize="14sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/BLAK"
+                                    android:text="16:00-18:00"
+                                    />
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Button
+                                    android:background="@color/buttonback"
+                                    android:textColor="@color/buttontextcolor"
+                                    android:textSize="14sp"
+                                    android:layout_width="71dp"
+                                    android:layout_height="22dp"
+                                    android:text="约满"
+                                    />
+
+                                <Button
+                                    android:layout_marginTop="32dp"
+                                    android:background="@color/buttonback"
+                                    android:textColor="@color/buttontextcolor"
+                                    android:textSize="14sp"
+                                    android:layout_width="71dp"
+                                    android:layout_height="22dp"
+                                    android:text="约满"
+                                    />
+                                <Button
+                                    android:layout_marginTop="32dp"
+                                    android:background="@color/buttonback"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="14sp"
+                                    android:layout_width="71dp"
+                                    android:layout_height="22dp"
+                                    android:text="剩余1位"
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <Button
+                            android:layout_marginTop="32dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:background="@drawable/button_backgroud_bt1"
+                            android:text="立即预约"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp" />
+
+
+                    </LinearLayout>
+
+
+
+                </android.support.v4.widget.NestedScrollView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.necer.calendar.Miui9Calendar>
+
+
+
+
+</LinearLayout>

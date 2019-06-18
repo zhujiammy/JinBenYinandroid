@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00848C</color>
+    <color name="colorPrimaryDark">#00848C</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="bg">#EDEDED</color>
+    <color name="BLAK">#000000</color>
+    <color name="red">#e31427</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#F0F0F0</color>
+    <color name="textcolor_t">#393838</color>
+    <color name="monsoon">#777777</color>
+    <color name="text1">#ff6600</color>
+    <color name="text2">#808080</color>
+    <color name="text3">#333333</color>
+    <color name="menu_item_press">#2e000000</color>
+    <color name="line">#cccccc</color>
+    <color name="daycolor">#38CFDC</color>
+    <color name="buttonback">#e6e6e6</color>
+    <color name="buttontextcolor">#808080</color>
+    <color name="CircleColor">#00D98B</color>
+    <color name="CircleColerRight">#fe993a</color>
+    <color name="def_bg">#f4f4f4</color>
+</resources>

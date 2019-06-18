@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">JinBenYin-android</string>
+    <string name="homepage">首页</string>
+    <string name="makeappointment">预约</string>
+    <string name="ar">AR</string>
+    <string name="shoppingcart">购物车</string>
+    <string name="me">我的</string>
+    <string name="msg">客服将在24小时内联系您\n请注意接听“镜本营科技”的固定来电</string>
+</resources>

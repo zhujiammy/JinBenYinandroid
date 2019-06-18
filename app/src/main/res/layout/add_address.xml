@@ -1,0 +1,229 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+
+        android:id="@+id/appbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新建验光地址"
+                />
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_marginLeft="10dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/tc"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/top_lin"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="243dp">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:textColor="@color/BLAK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所在地区"
+                />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/select_address_bt"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv1"
+                android:background="@null"
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="点击选取"
+                />
+
+            <View
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line"
+                />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:textColor="@color/BLAK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="门牌号"
+                />
+
+            <EditText
+                android:textCursorDrawable="@drawable/my_cursor"
+                android:gravity="center_vertical"
+                android:id="@+id/address_et"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv2"
+                android:background="@null"
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="详细地址，例：12号楼707室"
+                />
+
+            <View
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line"
+                />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/labview"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:textColor="@color/BLAK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标签"
+                />
+            <RadioGroup
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/labview"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <RadioButton
+                    android:checked="true"
+                    android:background="@drawable/rd_style"
+                    android:button="@null"
+                    android:id="@+id/home"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@drawable/rd_text_color"
+                    android:layout_width="50dp"
+                    android:layout_height="22dp"
+                    android:text="家"
+                    />
+                <RadioButton
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/rd_style"
+                    android:button="@null"
+                    android:id="@+id/school"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@drawable/rd_text_color"
+                    android:layout_width="50dp"
+                    android:layout_height="22dp"
+                    android:text="学校"
+                    />
+
+                <RadioButton
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/rd_style"
+                    android:button="@null"
+                    android:id="@+id/company"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@drawable/rd_text_color"
+                    android:layout_width="50dp"
+                    android:layout_height="22dp"
+                    android:text="公司"
+                    />
+
+            </RadioGroup>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <Button
+        android:layout_below="@+id/top_lin"
+        android:gravity="center"
+        android:text="保存地址"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:orientation="horizontal"
+        android:id="@+id/Save_Address_btn"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_backgroud_bt1"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        >
+
+    </Button>
+
+
+</RelativeLayout>

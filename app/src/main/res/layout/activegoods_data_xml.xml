@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="@drawable/lin_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_alignParentTop="true"
+            android:id="@+id/prodouct_img"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/test"
+            />
+
+        <TextView
+            android:padding="3dp"
+            android:textColor="@color/white"
+            android:background="@drawable/labview"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="182dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="惊喜来袭"
+            />
+
+        <TextView
+            android:layout_below="@+id/prodouct_img"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/prodouct_name"
+            android:layout_gravity="center_horizontal"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/BLAK"
+            android:text="金属全框镜架"
+            />
+
+        <LinearLayout
+            android:id="@+id/labview_lin"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/prodouct_name"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:textSize="10sp"
+                android:padding="3dp"
+                android:background="@drawable/textview_border"
+                android:textColor="@color/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网上购买"
+                />
+            <TextView
+                android:padding="3dp"
+                android:textSize="10sp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/textview_border"
+                android:textColor="@color/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="验光预约"
+                />
+
+            <TextView
+                android:padding="3dp"
+                android:textSize="10sp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/textview_border"
+                android:textColor="@color/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="门店"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_below="@+id/labview_lin"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/prodouct_price"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="@color/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="￥599.00"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

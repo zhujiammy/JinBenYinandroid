@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/view_title"/>
+    <me.majiajie.pagerbottomtabstrip.PageBottomTabLayout
+        android:id="@+id/tab"
+        android:elevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFF"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/ar"
+        app:maxImageSize="@dimen/dp_50"
+        app:borderWidth="0dp"
+        android:scaleType="center"
+        app:fabSize="normal"
+        app:backgroundTint="@color/white"
+        app:elevation="8dp"
+        app:pressedTranslationZ="16dp"
+        />
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titlebar"
+        android:layout_above="@id/tab">
+
+    </FrameLayout>
+</RelativeLayout>

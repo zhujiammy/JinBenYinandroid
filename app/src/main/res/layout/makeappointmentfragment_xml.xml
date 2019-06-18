@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预约验光"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="41dp"
+                android:id="@+id/carlogo"
+                android:layout_centerInParent="true"
+                android:layout_width="79dp"
+                android:layout_height="34dp"
+                android:src="@mipmap/che11"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/text1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dp"
+                android:layout_below="@+id/carlogo"
+                android:textSize="20sp"
+                android:textColor="@color/BLAK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="免费验光车上门配眼镜"
+                />
+
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@drawable/input_phone_lin"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="51dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/makeappointment_bt"
+            android:inputType="phone"
+            android:background="@null"
+            android:hint="请输入手机号"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/makeappointment_bt"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentRight="true"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="预约"
+            />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:background="@drawable/rl_background"
+        android:layout_marginTop="62dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/dingdan"
+                android:src="@mipmap/dingdan"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:layout_toRightOf="@+id/dingdan"
+                android:id="@+id/tv_num"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NO.JBY20190605007"
+                android:textColor="@color/BLAK"
+                />
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_num"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(待上门)"
+                android:textColor="@color/text1"
+                />
+
+            <Button
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_backgroud"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:text="催单"
+                />
+
+        </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/text2"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="客户姓名：张三"
+                />
+        <TextView
+            android:layout_weight="1"
+            android:textColor="@color/text2"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="客户地址：江苏省无锡市滨湖区外创大厦"
+            />
+
+        <TextView
+            android:layout_weight="1"
+            android:textColor="@color/text2"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="服务时间：2019年6月5日  上午9:00"
+            />
+
+
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="@color/text2"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="验光师：李四"
+                />
+
+
+            <Button
+                android:id="@+id/contact_bt"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_backgroud"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="查看位置"
+                />
+
+            <Button
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_backgroud"
+                android:layout_toLeftOf="@+id/contact_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="联系客服"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:layout_marginTop="35dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="简单3步  做省心用户"
+            />
+        
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="34dp"
+                    android:src="@mipmap/sj"
+                    />
+
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/text3"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="填写手机号"
+                    />
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_marginLeft="34dp"
+                android:layout_width="8dp"
+                android:layout_height="14dp"
+                android:src="@mipmap/you"
+                />
+
+            <LinearLayout
+                android:id="@+id/Add_Address_btn"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="34dp"
+                    android:src="@mipmap/dz"
+                    />
+
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/text3"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加地址"
+                    />
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_marginLeft="34dp"
+                android:layout_width="8dp"
+                android:layout_height="14dp"
+                android:src="@mipmap/you"
+                />
+            <LinearLayout
+                android:id="@+id/add_time_bt"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="34dp"
+                    android:src="@mipmap/time1"
+                    />
+
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/text3"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加预约时间"
+                    />
+
+
+            </LinearLayout>
+            
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+
+        android:id="@+id/appbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_centerInParent="true"
+
+
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="视光中心"
+                />
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_marginLeft="10dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/tc"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textColor="@color/BLAK"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="近5日左眼视力变化情况"
+                />
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textColor="@color/BLAK"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="近5日右眼视力变化情况"
+                />
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+
+
+            <LinearLayout
+
+                android:background="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:elevation="1dp"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@drawable/reservationinspection"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="41dp"
+                            android:layout_height="32dp"
+                            android:src="@mipmap/jx"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="17dp"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="预约检查"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:elevation="1dp"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@drawable/preventionmyopia"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="41dp"
+                            android:layout_height="32dp"
+                            android:src="@mipmap/js"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="17dp"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="预防近视"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:elevation="1dp"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@drawable/historicaldata"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="41dp"
+                            android:layout_height="32dp"
+                            android:src="@mipmap/lssj"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="17dp"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="历史数据"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:elevation="1dp"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@drawable/medicalconsultation"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="41dp"
+                            android:layout_height="32dp"
+                            android:src="@mipmap/yl"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="17dp"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="医疗咨询"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>
