@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.example.jinbenyin_android.R;
 
 public class MobliePhoneAcitivity extends AppCompatActivity {
-    //修改手机号
+    //修改手机
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
